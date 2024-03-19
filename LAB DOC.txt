@@ -1,0 +1,153 @@
+4.5.5
+01:Ter voorbereiding:
+	verkennen van de API`s op de website van ciso library:
+		Het commando: curl -X GET "http://library.demo.local/api/v1/books" -H "accept:application/json" voor het versturen van een get request.
+		      curl -X GET "http://library.demo.local/api/v1/books?includeISBN=true" -H "accept: application/json" voor het versturen van een		get-request met een parameter.
+		Voor een Post te maken geef ik de juiste credentials in, vervolgens krijg ik een token terug warmee ik kan authorizeren.
+		Een book post gemaakt door de payload aan te passen.
+		Een specifiek boek aan te vragen door een get{met het id} aant e vragen.
+		Een boek gedelete door een Delete{ID} API te gebruiken.
+	
+	Postman voor API calls te simuleren:
+		Een call maken voor de boeken aan te vragen met een GET.
+		Een Post te maken zodat we een token kunnen krijgen voor authorization.
+		Een boek gepost met als autherizatie een token te gebruiken.
+		Een Get request gemaakt met extra parameters, de parameters worden ook in de url bij aangevult.
+
+	Vscode / terminal:
+		Het add100randomfakebooks.py script nakijken.
+		in de terminal met faker een fake name maken.
+		faker gebruikern voor een random fake naam, phrase en isbn13 aan te maken: 
+		print ( 'My name is {}' .format(fake.name()),' and i wrote "{}" ' .format(fake.catch_phrase()),'  ({})' .format(fake.isbn13()))
+		Het uitvoeren van het script dat dan 100 boeken post op de webstie.
+		
+
+		
+		
+	
+	
+	
+02:probleem oplossing:
+	Code corrigeren en opnieuw uitvoeren.
+
+03:verificatie van de taak:
+	verkennen van de API`s op de website van ciso library:
+		Voor verificatie krijg ik telkens de juiste output terug na het aanvragen van de get requests.
+		Ik controleer of ik telkens code 200 succes terug krijg.
+		Ik controleer of de boeken ook effectief gepost zijn.
+		Ik controleer of de boeken geledete zijn door een Get request te doen voor alle boeken, ik zie het gedelete boek niet.
+
+	Postman voor API calls te simuleren:
+		ik controleer of ik de aanvragen juist aankrijg.
+		Kijken of ik een code 200 terug ktijg.
+		Nog een get uitvoeren om te kijken of het boek gepost is.
+		nachecken of de parameters ook in de body worden weergegeven.
+	
+	VScode/terminal:
+		nakijken of de 100boeken effectief gepost zijn.
+
+
+
+4.4.9
+
+01:ter voorbereiding:
+	Naar github gaan: https://github.com/KathleenHombroeks/PythonExperiments/tree/main/mixed.
+	Het script runnen en aanpassen voor de georgrafische informatie te krijgen van de opgegeven plaats.
+	Kijken naar het opgeslagen bestand van het script.
+	het script runnen voor Datetime en ook het script nakijken.
+	Het script Location.py runnen en inspecteren
+	
+	
+	
+	
+		
+
+02:probleem oplossing:
+	kan het script niet runnen en ook geopy niet installeren: eerst pip installeren en vervolgens geopy.
+	Folium ook installeren.
+	
+
+
+03:verficatie van de taak:
+	het script voor geografische informatie te krijgen controleren het script runt en de output is als verwacht.
+	Kijken naar het opgeslagen bestand.
+	Het script van datetime geeft de current date weer.
+	Het script location geeft de geolocatie van Brussel belgie weer.
+	
+
+LAB3
+Lab netacad: Cisco DEVNET 3.1.12
+
+In python een virutele omgeving aangemaakt en vervolgens een bestand aangemaakt met alle nodige dependencies, dan dat bestand gebruikt met pip3 om het te installeren dit in combinatie met de -r optie voor recurse.
+
+Lab netacad: Cisco DEVNET 3.4.6
+Uitleg over functies en methodes. vervolgens iets wat zeker nog niet kende was classes aanmaken. dit vond ik zeer boeiend om te lezen en te begrijpen.
+zelf heb ik ook classes proberen te maken, ik heb wat problemen ondervonden maar heb deze opgelost door mylocation functie bij in de class te plaatsen.
+Als laatste heb ik ook het script circleClass.py onderzocht:
+		eerst maakt het script een class, vervolgens een functie waar het een radius in definieert(deze kan je later meegeven).
+		de 2de functie is om de radius * pi(3.14) te doen
+		de 3de funcie scrhijft het uit en geeft de uitkomst mee
+		vervolgens roep je de class op (buiten de class) door circle1#gewoon een naam als variable
+		circle1 = circle(2) #deze 2 is de uiteindelijk de radius die wordt meegegeven in de class
+		als je dan circle1.printcircumfrence doet gaat hij eigenlijk het radius element dus 2 doorgeven aan de 3de functie die dan de hele 		berekening maakt en toont.+
+
+LAB 5
+Lab netacad: Cisco DEVNET 3.1.11 (GITHUB)
+
+01: Ter voorbereiding:
+	LOKAAL:
+		Lokaal op de virtuele machine een map maken voor git en deze initialiteren.
+		Bestanden maken, deze stagen en dan deze committen.
+		kijken wat er in de logs gebeurt.
+		het bestand aanpassen opnieuw stagen, en dan comitten.
+		verder opnieuw de veranderingen tracken
+		een brach maken, de file aanpassen en dan de master branch en de nieuwe branch mergen zodat de nieuwe branch gecombineerd wordt met 		de master branch
+		De nieuwe branch verwijderen
+		Een nieuwe branch maken, file aanpassen, terug naar master branch gaan file aanpassen zodat het conflicteerd met de file in de andere 		branch	proberen om de de test branch toch the mergen met de master branch	
+	GITHUB:
+		Een eerste repository maken
+	LOKAAL:
+		Dezelfde map als de repository maken en hier de file inplaatsen
+		De map initializen en linken met mijn github repository
+		De file adden (stagen) en dan comitten op git
+		De file pushen naar github
+
+02: Probleem oplossing:
+	De test branch kan niet gecombineerd worden met de masterbranch door conflicterende bestanden.
+	Bestanden vergelijken om te kijken waar het verschil zit en dan de bestanden aanpassen.
+	Kon niet pushen naar github, oplossing: een token Key generaten met nodige rechten voor de repository.
+	Dan met deze key aanmelden in de terminal tijdens de push 
+	kan de website niet vinden tijdens de push, oplossing: de link verwijderen en opnieuw linken met de correcte url.
+	
+
+03: Verificatie van de taak:
+	De logs controleren
+	De files controleren voor de aanpassingen
+	controleren of de oude branch verwijdert is
+	controleren met verbose of remote aan het runnen is op github
+	controleren in de logs of dat er geen commits zijn
+	nakijken of de file op github staat
+
+
+LAB 3.6.6
+
+01: ter voorbereiding:
+	een script maken voor XML uit te lezen met python.
+	hiervoor importeren we de module xml.etree.ElemwnTree as ET
+	We schrijven het script en lezen later het uit.
+	Het script gaat zoeken
+02: Probleem oplossing:
+03: Verificatie van de taak:
+
+
+
+
+
+
+
+
+		
+		
+		
+	
+	
